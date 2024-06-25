@@ -81,11 +81,8 @@ nav ul li a:hover {
 
 .note ul {
     margin-top: 0;
-    padding-left: 40px;
+    padding-left: 15px;
     list-style-position: inside;
-}
-.note ul li {
-    margin-bottom: 5px;
 }
 
 .note ul li {
