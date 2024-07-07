@@ -16,7 +16,7 @@
                 <li><a href="#top-section">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#project-content">Portfolio</a></li>
-                <li><a href="#footer">Contact</a></li>
+                <li><a href="#footer" id="contact-link">Contact</a></li>
             </ul>
         </nav>
         <section id="top-section">
@@ -81,8 +81,18 @@
                 </div>
             </div>
         </section>
-        <footer id="footer">
-            <p>2024 &copy MyPortfolio: +37069088048 mykolasjerutis@gmail.com https://www.linkedin.com/in/mykolas-jerutis-66272724b/</p>
-        </footer>
-    </body>
+    <footer id="footer">
+        <p>2024 &copy MyPortfolio: +37069088048 mykolasjerutis@gmail.com https://www.linkedin.com/in/mykolas-jerutis-66272724b/</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-link").addEventListener("click", function() {
+            var footer = document.getElementById("footer");
+            footer.classList.add("footer-blink");
+            setTimeout(function() {
+                footer.classList.remove("footer-blink");
+            }, 1000);
+        });
+    </script>
+</body>
 </html>
