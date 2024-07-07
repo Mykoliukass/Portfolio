@@ -138,11 +138,6 @@ footer {
     border-radius: 5px;
 }
 
-#div-content img {
-    width: 100%;
-    height: auto;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -156,4 +151,20 @@ footer {
 
 footer p {
     margin: 0 auto;
+}
+
+#div-content img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Scale (Zoom) Effect on hover */
+#div-content img:hover {
+    transform: scale(1.1); /* Scale up the image */
+}
+
+/* Optional: Combine with Shadow Effect on hover */
+#div-content img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a shadow */
 }
