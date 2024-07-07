@@ -163,6 +163,21 @@ footer p {
 #div-content img:hover {
     transform: scale(1.1); /* Scale up the image */
 }
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.blink {
+    animation: blink 1s ease-in-out;
+}
+
+/* Optional: Add a more pronounced effect */
+.footer-blink {
+    animation: blink 1s ease-in-out;
+}
+
 
 /* Optional: Combine with Shadow Effect on hover */
 #div-content img:hover {
